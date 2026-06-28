@@ -2,7 +2,7 @@
 const choices = ["rock", "paper", "scissors"];
 let humanScore = 0;
 let computerScore = 0;
-let round = 0;
+let round = 1;
 
 function getComputerChoice() {
     const random = Math.floor(Math.random() * choices.length);
@@ -39,14 +39,14 @@ function playRound(computerChoice, humanChoice) {
 
 function playGame() {
 
-    while (round < 5) {
+    while (round <= 5) {
 
         const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice();
         playRound(computerSelection, humanSelection);
 
     }
-
+    
     if (humanScore > computerScore) {
         console.log(`${humanScore} : Human Wins!`);
     }
@@ -59,7 +59,3 @@ function playGame() {
 }
 
 playGame();
-
-
-// console.log(getComputerChoice());
-//console.log(getHumanChoice());
