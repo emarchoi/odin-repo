@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.player-setup,
+.scoreboard,
+.turn-indicator,
+.choices,
+.result {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.player-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.player-inputs div {
+    display: flex;
+    flex-direction: column;
+}
+
+#start-game {
+    width: 150px;
+    align-self: center;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-around;
+}
+
+.player-score {
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-group button {
+    height: 100px;
+    width: 100px;
+
+}

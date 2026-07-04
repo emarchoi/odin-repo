@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Rock Paper Scissors</h1>
+
+      <!-- Player Setup -->
+      <section class="player-setup">
+        <h2>Player Names</h2>
+
+        <div class="player-inputs">
+          <div>
+            <label for="player1">Player 1</label>
+            <input type="text" id="player1" />
+          </div>
+
+          <div>VS</div>
+
+          <div>
+            <label for="player2">Player 2</label>
+            <input type="text" id="player2" />
+          </div>
+        </div>
+
+        <button id="start-game">Start Game</button>
+      </section>
+
+      <!-- Scoreboard -->
+      <section class="scoreboard">
+        <h2>Scoreboard</h2>
+
+        <div class="scores">
+          <div class="player-score">
+            <h3 id="player1-name">Player 1</h3>
+            <p id="player1-score">0</p>
+          </div>
+
+          <div class="player-score">
+            <h3 id="player2-name">Player 2</h3>
+            <p id="player2-score">0</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Current Turn -->
+      <section class="turn-indicator">
+        <h2>Current Turn</h2>
+        <p id="current-turn">Player</p>
+      </section>
+
+      <!-- Round Result -->
+      <section class="result">
+        <h2>Result</h2>
+        <p id="result-text">Waiting...</p>
+      </section>
+      
+      <!-- Choices -->
+      <section class="choices">
+        <h2>Choose</h2>
+
+        <div class="button-group">
+          <button id="rock">Rock</button>
+          <button id="paper">Paper</button>
+          <button id="scissors">Scissors</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
