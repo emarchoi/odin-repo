@@ -6,7 +6,7 @@ const deleteBtn = document.querySelector("#delete");
 const calculateBtn = document.querySelector("#calculate");
 
 calcuBtn.forEach(button => {
-    
+
     button.addEventListener("click", () => {
 
         display.textContent += button.value;
@@ -24,6 +24,11 @@ calculateBtn.addEventListener("click", () => {
 
     display.textContent = calculate(display.textContent);
 
+});
+
+deleteBtn.addEventListener("click", () => {
+
+    display.textContent = display.textContent.slice(0, -1);
 });
 
 function calculate(num){
